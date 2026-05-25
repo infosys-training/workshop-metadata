@@ -1,0 +1,571 @@
+# upstream-map.yaml
+#
+# Canonical mapping of every repo in the Cognition-Partner-Workshops org
+# to its original upstream source and cluster membership.
+#
+# HOW TO USE THIS FILE
+# --------------------
+# - "upstream" is the GitHub owner/repo the code was originally imported from.
+#   null means the repo was scaffolded from scratch for workshops.
+# - "import_method" tells you how it got here:
+#     github-fork   = GitHub fork (parent link preserved, visible in GitHub UI)
+#     clone-and-push = cloned upstream, re-pushed under a new repo name
+#                      (no GitHub parent link; shares initial commit with upstream)
+#     original      = written from scratch for this org
+# - "cluster" groups repos that are related by shared git history OR shared
+#   application/project. Use this to understand which repos go together.
+#
+# KEEPING REPOS IN SYNC
+# ---------------------
+# We intentionally do NOT mirror or auto-sync between clustered repos.
+# Each repo in a cluster is meant to diverge from the upstream (and from
+# each other) because different workshop labs start from the same codebase
+# but have different objectives. Mirrors would overwrite lab-specific
+# changes.
+#
+# Instead we track relationships here so you can:
+#   1. Find all repos derived from the same source
+#   2. Compare divergence:  git remote add upstream <url> && git fetch upstream
+#   3. Cherry-pick upstream fixes when needed
+#
+# To add an upstream remote to a local clone for comparison:
+#   git remote add upstream https://github.com/<upstream>
+#   git fetch upstream
+#   git log --oneline upstream/main..HEAD   # see local-only commits
+#
+# WHEN TO UPDATE THIS FILE
+# ------------------------
+# - When a new repo is added to the org
+# - When a repo is archived or removed
+# - When a cluster relationship is discovered or changes
+
+# ============================================================
+# Clusters — groups of related repos
+# ============================================================
+clusters:
+
+  C1:
+    label: "Spring Boot RealWorld (gothinkster)"
+    upstream: gothinkster/spring-boot-realworld-example-app
+    shared_initial_commit: ee946e371b7a
+    reason: >
+      Labs 2 and 3 both start from the same Spring Boot 2.6.3 monolith
+      but have different objectives (framework upgrade vs. CVE remediation).
+      The original import is also retained with ts- prefix.
+    repos:
+      - ts-java-spring-boot-realworld   # original import (renamed)
+      - uc-cve-remediation-regulatory-compliance     # Lab 3: security
+      - uc-spring-boot-upgrade-microservice-extraction  # Lab 2: upgrade
+
+  C2:
+    label: "AWS CardDemo (COBOL mainframe)"
+    upstream: aws-samples/aws-mainframe-modernization-carddemo
+    shared_initial_commit: 6c04f7b12043
+    reason: >
+      Lab 1 uses a dedicated copy for COBOL-to-Java migration.
+      The original fork is also retained.
+    repos:
+      - ts-cobol-carddemo         # original fork
+      - uc-legacy-modernization-cobol-to-java         # Lab 1: COBOL migration
+
+  C3:
+    label: "Spring PetClinic ecosystem"
+    upstream: spring-projects/spring-petclinic (family)
+    shared_initial_commit: 349fdef18bcf (backend + microservices; angular differs)
+    reason: >
+      Four repos for the same application ecosystem: Angular frontend,
+      Spring Boot backend monolith, distributed microservices variant,
+      and REST API variant with rich OpenAPI 3.0 specification.
+    repos:
+      - petclinic-angular        # from spring-petclinic/spring-petclinic-angular
+      - petclinic-backend        # from spring-projects/spring-petclinic
+      - petclinic-microservices  # from spring-petclinic/spring-petclinic-microservices
+      - petclinic-rest-api  # from spring-petclinic/spring-petclinic-rest
+
+  C4:
+    label: "Modular Monolith with DDD (kgrzybek)"
+    upstream: kgrzybek/modular-monolith-with-ddd
+    shared_initial_commit: null  # different roots, same upstream project
+    reason: >
+      Backend (.NET) and frontend (React) from the same upstream project,
+      split into two repos by the upstream author.
+    repos:
+      - modular-monolith-ddd          # backend — kgrzybek/modular-monolith-with-ddd
+      - modular-monolith-ddd-react # frontend — kgrzybek/modular-monolith-with-ddd-fe-react
+
+  C5:
+    label: "Cal.com ecosystem"
+    upstream: calcom/cal.com
+    shared_initial_commit: null  # app is fork; infra + dataeng are original
+    reason: >
+      The main Cal.com app plus infrastructure and data engineering repos
+      built around it for workshop demos.
+    repos:
+      - calcom           # fork of calcom/cal.com
+      - calcom-infra     # original — AWS CDK infra for Cal.com
+      - calcom-dataeng   # original — data engineering for Cal.com
+
+  C6:
+    label: "EventFlow multi-service demo"
+    upstream: null  # all scaffolded from scratch
+    shared_initial_commit: null
+    reason: >
+      Five-repo event-driven architecture demo: order service, payment
+      service, storefront, infrastructure, and Devin integration tooling.
+    repos:
+      - eventflow-order-service
+      - eventflow-payment-service
+      - eventflow-storefront
+      - eventflow-infra
+      - eventflow-devin-integration
+
+  C7:
+    label: "Apache Fineract ecosystem"
+    upstream: apache/fineract
+    shared_initial_commit: null  # backend + frontend have different roots
+    reason: >
+      Backend (Apache Fineract) and frontend (Mifos web app) from the
+      same banking platform ecosystem.
+    repos:
+      - fineract                # fork of apache/fineract
+      - fineract-web-app  # fork of openMF/web-app
+
+  C8:
+    label: "Client Timesheet App"
+    upstream: null  # original
+    shared_initial_commit: null
+    reason: >
+      The timesheet application and its hosting/infrastructure repo.
+    repos:
+      - timesheet-app          # the app itself
+      - timesheet-infra  # Terraform infra for deploying it
+
+  C9:
+    label: "AngularJS 1.x admin demos"
+    upstream: null  # different upstreams
+    shared_initial_commit: null
+    reason: >
+      Two AngularJS 1.x admin dashboard repos for framework migration demos
+      (AngularJS -> Angular/React). Different upstream sources but same
+      technology and purpose.
+    repos:
+      - ts-angularjs-blur-admin  # from akveo/blur-admin
+      - ts-angularjs-dashboard-widgets                  # from dtpublic/malhar-angular-dashboard
+
+  C10:
+    label: "SAS Migration"
+    upstream: scottbass/SAS
+    shared_initial_commit: null
+    reason: >
+      Enterprise SAS analytics estate paired with two migration targets:
+      Snowflake validation toolkit and dbt/Databricks target architecture.
+    repos:
+      - ts-sas-legacy-analytics              # SAS source (from scottbass/SAS)
+      - uc-data-migration-sas-to-snowflake    # Snowflake migration validation tooling
+      - uc-data-migration-sas-to-databricks   # dbt/Databricks target architecture
+
+  C11:
+    label: "OrderManager Monolith-to-Microservices"
+    upstream: null
+    shared_initial_commit: null
+    reason: >
+      Platform standard + .NET/Angular monolith + service IaC for
+      decomposition demos. Platform repo provides the shared EKS/ArgoCD/
+      monitoring infrastructure; app repos demonstrate monolith-to-
+      microservices conforming to platform standard.
+    repos:
+      - platform-engineering-shared-services
+      - ordermanager-monolith
+      - ordermanager-iac
+      - ordermanager-microservices
+
+  C12:
+    label: ".NET/Angular Containerized Decomposition"
+    upstream: null
+    shared_initial_commit: null
+    reason: >
+      Four-repo decomposition workshop: before-state monolith (imported
+      from QuickApp), target-state .NET microservices, target-state Angular
+      micro-frontends, and app-specific IaC for Kubernetes deployment.
+    repos:
+      - quickapp-monolith
+      - quickapp-microservices
+      - quickapp-microfrontends
+      - quickapp-iac
+
+# ============================================================
+# Per-repo upstream mapping (alphabetical)
+# ============================================================
+repos:
+
+  ts-python-aws-personalize:
+    upstream: aws-samples/amazon-personalize-immersion-day
+    upstream_url: https://github.com/aws-samples/amazon-personalize-immersion-day
+    import_method: github-fork
+    cluster: null
+
+  ts-angularjs-blur-admin:
+    upstream: akveo/blur-admin
+    upstream_url: https://github.com/akveo/blur-admin
+    import_method: github-fork
+    cluster: C9
+
+  ts-angularjs-dashboard-widgets:
+    upstream: dtpublic/malhar-angular-dashboard
+    upstream_url: https://github.com/dtpublic/malhar-angular-dashboard
+    import_method: github-fork
+    cluster: C9
+
+  eventflow-devin-integration:
+    upstream: null
+    import_method: original
+    cluster: C6
+
+  eventflow-infra:
+    upstream: null
+    import_method: original
+    cluster: C6
+
+  eventflow-order-service:
+    upstream: null
+    import_method: original
+    cluster: C6
+
+  eventflow-payment-service:
+    upstream: null
+    import_method: original
+    cluster: C6
+
+  eventflow-storefront:
+    upstream: null
+    import_method: original
+    cluster: C6
+
+  ordermanager-monolith:
+    upstream: null
+    import_method: original
+    cluster: C11
+
+  ordermanager-iac:
+    upstream: null
+    import_method: original
+    cluster: C11
+
+  ordermanager-microservices:
+    upstream: null
+    import_method: original
+    cluster: C11
+
+  quickapp-monolith:
+    upstream: null
+    import_method: original
+    cluster: C12
+    note: "Before-state monolith imported from QuickApp"
+
+  quickapp-microservices:
+    upstream: null
+    import_method: original
+    cluster: C12
+
+  quickapp-microfrontends:
+    upstream: null
+    import_method: original
+    cluster: C12
+
+  quickapp-iac:
+    upstream: null
+    import_method: original
+    cluster: C12
+
+  petclinic-angular:
+    upstream: spring-petclinic/spring-petclinic-angular
+    upstream_url: https://github.com/spring-petclinic/spring-petclinic-angular
+    import_method: clone-and-push
+    cluster: C3
+
+  petclinic-backend:
+    upstream: spring-projects/spring-petclinic
+    upstream_url: https://github.com/spring-projects/spring-petclinic
+    import_method: clone-and-push
+    cluster: C3
+
+  petclinic-microservices:
+    upstream: spring-petclinic/spring-petclinic-microservices
+    upstream_url: https://github.com/spring-petclinic/spring-petclinic-microservices
+    import_method: clone-and-push
+    cluster: C3
+
+  timesheet-app:
+    upstream: null
+    import_method: original
+    cluster: C8
+
+  ts-cobol-carddemo:
+    upstream: aws-samples/aws-mainframe-modernization-carddemo
+    upstream_url: https://github.com/aws-samples/aws-mainframe-modernization-carddemo
+    import_method: github-fork
+    cluster: C2
+
+  calcom:
+    upstream: calcom/cal.com
+    upstream_url: https://github.com/calcom/cal.com
+    import_method: github-fork
+    cluster: C5
+
+  calcom-dataeng:
+    upstream: null
+    import_method: original
+    cluster: C5
+
+  calcom-infra:
+    upstream: null
+    import_method: original
+    cluster: C5
+
+  ts-react-coreui-admin:
+    upstream: coreui/coreui-free-react-admin-template
+    upstream_url: https://github.com/coreui/coreui-free-react-admin-template
+    import_method: github-fork
+    cluster: null
+
+  modular-monolith-ddd:
+    upstream: kgrzybek/modular-monolith-with-ddd
+    upstream_url: https://github.com/kgrzybek/modular-monolith-with-ddd
+    import_method: github-fork
+    cluster: C4
+
+  modular-monolith-ddd-react:
+    upstream: kgrzybek/modular-monolith-with-ddd-fe-react
+    upstream_url: https://github.com/kgrzybek/modular-monolith-with-ddd-fe-react
+    import_method: github-fork
+    cluster: C4
+
+  fineract:
+    upstream: apache/fineract
+    upstream_url: https://github.com/apache/fineract
+    import_method: github-fork
+    cluster: C7
+
+  timesheet-infra:
+    upstream: null
+    import_method: original
+    cluster: C8
+
+  jpetstore-6:
+    upstream: OctoPerf/jpetstore-6
+    upstream_url: https://github.com/OctoPerf/jpetstore-6
+    import_method: github-fork
+    cluster: null
+
+  ts-katalon-web-automation:
+    upstream: katalon-studio-samples/katalon-web-automation
+    upstream_url: https://github.com/katalon-studio-samples/katalon-web-automation
+    import_method: github-fork
+    cluster: null
+
+  keycloak:
+    upstream: keycloak/keycloak
+    upstream_url: https://github.com/keycloak/keycloak
+    import_method: github-fork
+    cluster: null
+
+  fineract-web-app:
+    upstream: openMF/web-app
+    upstream_url: https://github.com/openMF/web-app
+    import_method: github-fork
+    cluster: C7
+
+  ofbiz-framework:
+    upstream: vijaysengodan/ofbiz-framework
+    upstream_url: https://github.com/vijaysengodan/ofbiz-framework
+    import_method: github-fork
+    cluster: null
+    note: "Intermediate fork; canonical upstream is apache/ofbiz-framework"
+
+  openmrs-core:
+    upstream: openmrs/openmrs-core
+    upstream_url: https://github.com/openmrs/openmrs-core
+    import_method: github-fork
+    cluster: null
+
+  ts-java-real-estate-management:
+    upstream: eevan7a9/real-estate-management
+    upstream_url: https://github.com/eevan7a9/real-estate-management
+    import_method: github-fork
+    cluster: null
+
+  ruby-redmine:
+    upstream: redmine/redmine
+    upstream_url: https://github.com/redmine/redmine
+    import_method: github-fork
+    cluster: null
+
+  ts-serverless-digital-asset-payments:
+    upstream: aws-samples/sample-serverless-digital-asset-payments
+    upstream_url: https://github.com/aws-samples/sample-serverless-digital-asset-payments
+    import_method: github-fork
+    cluster: null
+
+  ts-serverless-eda-insurance-claims:
+    upstream: aws-samples/serverless-eda-insurance-claims-processing
+    upstream_url: https://github.com/aws-samples/serverless-eda-insurance-claims-processing
+    import_method: github-fork
+    cluster: null
+
+  ts-python-streamify-data-engineering:
+    upstream: ankurchavda/streamify
+    upstream_url: https://github.com/ankurchavda/streamify
+    import_method: github-fork
+    cluster: null
+
+  traderx:
+    upstream: COG-GTM/traderXCognitiondemos
+    upstream_url: https://github.com/COG-GTM/traderXCognitiondemos
+    import_method: github-fork
+    cluster: null
+
+  ts-angular-realworld:
+    upstream: realworld-apps/angular-realworld-example-app
+    upstream_url: https://github.com/realworld-apps/angular-realworld-example-app
+    import_method: github-fork
+    cluster: null
+
+  ts-java-angular-jhipster:
+    upstream: null
+    import_method: original
+    cluster: null
+
+  ts-informatica-powercenter:
+    upstream: HHS/Informatica
+    upstream_url: https://github.com/HHS/Informatica
+    import_method: clone-and-push
+    cluster: null
+    note: "Renamed from Informatica-Demo per naming convention. Informatica PowerCenter 9.6.1 XML exports for EHRP-to-BIIS data integration."
+
+  ts-java-spring-boot-internet-banking:
+    upstream: JavatoDev-com/internet-banking-concept-microservices
+    upstream_url: https://github.com/JavatoDev-com/internet-banking-concept-microservices
+    import_method: clone-and-push
+    cluster: null
+    note: "Internet Banking Concept — 6 Spring Boot microservices. Target app for knowledge base generation, FSE gap analysis, Jira story creation, and code impact analysis workshops."
+
+  ts-java-spring-boot-realworld:
+    upstream: gothinkster/spring-boot-realworld-example-app
+    upstream_url: https://github.com/gothinkster/spring-boot-realworld-example-app
+    import_method: github-fork
+    cluster: C1
+    note: "Original import; renamed from spring-boot-realworld-example-app"
+
+  petclinic-rest-api:
+    upstream: spring-petclinic/spring-petclinic-rest
+    upstream_url: https://github.com/spring-petclinic/spring-petclinic-rest
+    import_method: clone-and-push
+    cluster: C3
+    note: "REST API variant with rich OpenAPI 3.0 spec (35 ops, 15 schemas, 8 domains). Input for API-first microservice code generation workshops."
+
+  ts-sas-legacy-analytics:
+    upstream: scottbass/SAS
+    upstream_url: https://github.com/scottbass/SAS
+    import_method: clone-and-push
+    cluster: C10
+
+  ts-java-selenium-testng:
+    upstream: bharathish-diggavi/selenium-testng-framework
+    upstream_url: https://github.com/bharathish-diggavi/selenium-testng-framework
+    import_method: github-fork
+    cluster: null
+
+  ts-java-swagger-petstore:
+    upstream: swagger-api/swagger-petstore
+    upstream_url: https://github.com/swagger-api/swagger-petstore
+    import_method: github-fork
+    cluster: null
+
+  uc-bdd-test-generation-cucumber:
+    upstream: RedFroggy/spring-cucumber-rest-api
+    upstream_url: https://github.com/RedFroggy/spring-cucumber-rest-api
+    import_method: clone-and-push
+    cluster: null
+    note: "Imported for BDD test generation use case (dc-2 workshop)"
+
+  uc-cve-remediation-regulatory-compliance:
+    upstream: gothinkster/spring-boot-realworld-example-app
+    upstream_url: https://github.com/gothinkster/spring-boot-realworld-example-app
+    import_method: clone-and-push
+    cluster: C1
+    note: "Lab 3 — security-focused copy of the Spring Boot monolith"
+
+  uc-data-migration-airflow:
+    upstream: null
+    import_method: original
+    cluster: null
+
+  uc-data-migration-sas-to-snowflake:
+    upstream: null
+    import_method: original
+    cluster: C10
+    note: "Snowflake migration validation tooling — lineage metadata, sample datasets, Streamlit UI"
+
+  uc-data-migration-sas-to-databricks:
+    upstream: null
+    import_method: original
+    cluster: C10
+    note: "dbt/Databricks target architecture — staging/intermediate/marts models, Jinja macros, construct mapping"
+
+  uc-data-source-migration-jdbc-normalization:
+    upstream: null
+    import_method: original
+    cluster: null
+
+  uc-document-review-automation:
+    upstream: null
+    import_method: original
+    cluster: null
+    note: "Scaffolded for agentic AI document review use case (dc-2 workshop)"
+
+  uc-dw-migration-teradata-to-snowflake:
+    upstream: null
+    import_method: original
+    cluster: null
+
+  uc-spring-boot-upgrade-microservice-extraction:
+    upstream: gothinkster/spring-boot-realworld-example-app
+    upstream_url: https://github.com/gothinkster/spring-boot-realworld-example-app
+    import_method: clone-and-push
+    cluster: C1
+    note: "Lab 2 — framework upgrade copy of the Spring Boot monolith"
+
+  uc-java-upgrade-broadleaf-commerce:
+    upstream: BroadleafCommerce/BroadleafCommerce
+    upstream_url: https://github.com/BroadleafCommerce/BroadleafCommerce
+    import_method: github-fork
+    cluster: null
+
+  uc-legacy-modernization-cobol-to-java:
+    upstream: aws-samples/aws-mainframe-modernization-carddemo
+    upstream_url: https://github.com/aws-samples/aws-mainframe-modernization-carddemo
+    import_method: clone-and-push
+    cluster: C2
+    note: "Lab 1 — COBOL-to-Java migration copy of CardDemo"
+
+  uc-pod-remediation-credential-rotation:
+    upstream: null
+    import_method: original
+    cluster: null
+    note: "Scaffolded for agentic AI pod remediation use case (dc-2 workshop)"
+
+  uc-product-analysis-loan-modernization:
+    upstream: null
+    import_method: original
+    cluster: null
+
+  uc-volume-anomaly-detection:
+    upstream: null
+    import_method: original
+    cluster: null
+    note: "Scaffolded for agentic AI anomaly detection use case (dc-2 workshop)"
+
+  workshop-metadata:
+    upstream: null
+    import_method: original
+    cluster: null
