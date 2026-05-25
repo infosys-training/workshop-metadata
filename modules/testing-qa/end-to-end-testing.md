@@ -79,7 +79,7 @@ The application must be running locally on Devin's machine or hosted externally.
 
 ## <a id="timesheet-app"></a>timesheet-app
 
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Simpler application — good for first-timers with E2E testing. Backend on port 3001, frontend on port 5173. Login with any email (no password required).
 
@@ -119,7 +119,7 @@ Open the repo's DeepWiki page to understand the frontend routes and components. 
 
 ## <a id="calcom"></a>calcom
 
-**Repository:** [calcom](https://github.com/Cognition-Partner-Workshops/calcom)
+**Repository:** [calcom](https://github.com/infosys-training/calcom)
 
 Rich scheduling application with existing Playwright configuration. `yarn dev` starts on port 3000.
 

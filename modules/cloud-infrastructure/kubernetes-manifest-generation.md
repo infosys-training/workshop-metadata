@@ -62,7 +62,7 @@ Intermediate to Advanced
 
 ### <a id="petclinic-microservices"></a>petclinic-microservices
 
-**Repository:** [petclinic-microservices](https://github.com/Cognition-Partner-Workshops/petclinic-microservices)
+**Repository:** [petclinic-microservices](https://github.com/infosys-training/petclinic-microservices)
 
 Spring Cloud microservices (API Gateway, Customers, Visits, Vets, Config Server, Discovery Server) — each service needs its own K8s manifest set.
 
@@ -91,7 +91,7 @@ Open the repo's DeepWiki page to understand the service architecture — particu
 
 ### <a id="uc-spring-boot-upgrade-microservice-extraction"></a>uc-spring-boot-upgrade-microservice-extraction
 
-**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction)
+**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction)
 
 Spring Boot monolith with a Next.js frontend — generate K8s manifests for deploying as separate backend and frontend services.
 

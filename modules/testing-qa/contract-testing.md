@@ -77,7 +77,7 @@ Intermediate to Advanced
 
 ## <a id="petclinic-microservices"></a>petclinic-microservices
 
-**Repository:** [petclinic-microservices](https://github.com/Cognition-Partner-Workshops/petclinic-microservices)
+**Repository:** [petclinic-microservices](https://github.com/infosys-training/petclinic-microservices)
 
 Spring Cloud microservices with multiple service boundaries (API Gateway, Customers, Visits, Vets) communicating via REST.
 
@@ -118,7 +118,7 @@ Open the repo's DeepWiki page to understand the API Gateway's aggregation patter
 
 ## <a id="quickapp-microservices"></a>quickapp-microservices
 
-**Repository:** [quickapp-microservices](https://github.com/Cognition-Partner-Workshops/quickapp-microservices)
+**Repository:** [quickapp-microservices](https://github.com/infosys-training/quickapp-microservices)
 
 .NET microservices with Angular frontend — a containerized decomposition architecture with multiple service boundaries.
 

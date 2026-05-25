@@ -86,7 +86,7 @@ Intermediate to Advanced
 
 ## <a id="petclinic-microservices"></a>petclinic-microservices
 
-**Repository:** [petclinic-microservices](https://github.com/Cognition-Partner-Workshops/petclinic-microservices)
+**Repository:** [petclinic-microservices](https://github.com/infosys-training/petclinic-microservices)
 
 Spring Cloud microservices version of PetClinic. Multiple services (customers, visits, vets) with service discovery and API gateway.
 
@@ -126,7 +126,7 @@ Open the repo's DeepWiki page to understand the service architecture, communicat
 
 ## <a id="uc-spring-boot-upgrade-microservice-extraction"></a>uc-spring-boot-upgrade-microservice-extraction
 
-**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction)
+**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction)
 
 Spring Boot monolith with multiple domains (articles, comments, users). The Comments domain can be extracted into a standalone microservice.
 

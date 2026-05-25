@@ -117,7 +117,7 @@ Intermediate to Advanced
 
 ## <a id="quickapp-monolith"></a>quickapp-monolith
 
-**Repository:** [quickapp-monolith](https://github.com/Cognition-Partner-Workshops/quickapp-monolith)
+**Repository:** [quickapp-monolith](https://github.com/infosys-training/quickapp-monolith)
 
 .NET Angular modular monolith (QuickApp). Contains Identity, Customer, Order, Product, and Inventory modules sharing a single `AppDbContext`. The Angular SPA frontend communicates via `/api/*` REST endpoints. Uses EF Core with SQLite and ASP.NET Core Identity.
 
@@ -183,7 +183,7 @@ Open each repo's DeepWiki page to understand the architecture:
 
 ## <a id="quickapp-microservices"></a>quickapp-microservices
 
-**Repository:** [quickapp-microservices](https://github.com/Cognition-Partner-Workshops/quickapp-microservices)
+**Repository:** [quickapp-microservices](https://github.com/infosys-training/quickapp-microservices)
 
 Target-state scaffold with 5 microservices (Identity, Customer, Order, Product, Notification) + YARP API Gateway. Each service follows Clean Architecture (API/Domain/Infrastructure layers). Includes docker-compose for local development with PostgreSQL and RabbitMQ.
 

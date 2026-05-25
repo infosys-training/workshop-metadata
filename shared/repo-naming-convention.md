@@ -1,6 +1,6 @@
 # Repository Naming Convention
 
-All repositories in the [Cognition-Partner-Workshops](https://github.com/Cognition-Partner-Workshops) org follow a naming convention designed for high-cardinality discovery.
+All repositories in the [infosys-training](https://github.com/infosys-training) org follow a naming convention designed for high-cardinality discovery.
 
 ## Categories
 

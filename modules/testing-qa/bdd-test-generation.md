@@ -80,7 +80,7 @@ Intermediate
 
 ## <a id="uc-bdd-test-generation-cucumber"></a>uc-bdd-test-generation-cucumber
 
-**Repository:** [uc-bdd-test-generation-cucumber](https://github.com/Cognition-Partner-Workshops/uc-bdd-test-generation-cucumber)
+**Repository:** [uc-bdd-test-generation-cucumber](https://github.com/infosys-training/uc-bdd-test-generation-cucumber)
 
 Spring Boot + Cucumber BDD test framework for REST API validation. Imported from RedFroggy/spring-cucumber-rest-api (MIT license).
 
@@ -121,7 +121,7 @@ Open the repo's DeepWiki page to understand the existing Cucumber configuration,
 
 ## <a id="ts-java-swagger-petstore"></a>ts-java-swagger-petstore
 
-**Repository:** [ts-java-swagger-petstore](https://github.com/Cognition-Partner-Workshops/ts-java-swagger-petstore)
+**Repository:** [ts-java-swagger-petstore](https://github.com/infosys-training/ts-java-swagger-petstore)
 
 Swagger Petstore sample API — use as the target API specification for BDD test generation.
 

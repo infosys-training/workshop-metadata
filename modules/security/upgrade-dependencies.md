@@ -28,7 +28,7 @@ Paste this prompt into Devin to get started immediately:
 
 ```
 Resolve this GitHub Issue:
-https://github.com/Cognition-Partner-Workshops/timesheet-app/issues/2
+https://github.com/infosys-training/timesheet-app/issues/2
 Audit the npm dependencies for known vulnerabilities,
 upgrade all vulnerable packages to their latest secure
 versions, and ensure the build and tests still pass.
@@ -66,7 +66,7 @@ Beginner to Intermediate
 
 ## <a id="timesheet-app"></a>timesheet-app
 
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Node.js application with npm dependencies — use `npm audit` to identify and fix vulnerable packages.
 
@@ -74,7 +74,7 @@ Node.js application with npm dependencies — use `npm audit` to identify and fi
 
 ```
 Resolve this GitHub Issue:
-https://github.com/Cognition-Partner-Workshops/timesheet-app/issues/2
+https://github.com/infosys-training/timesheet-app/issues/2
 Audit the npm dependencies for known vulnerabilities,
 upgrade all vulnerable packages to their latest secure
 versions, and ensure the build and tests still pass.
@@ -107,7 +107,7 @@ Open the repo's DeepWiki page to understand which dependencies are critical to t
 
 ## <a id="uc-cve-remediation-regulatory-compliance"></a>uc-cve-remediation-regulatory-compliance
 
-**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/Cognition-Partner-Workshops/uc-cve-remediation-regulatory-compliance)
+**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/infosys-training/uc-cve-remediation-regulatory-compliance)
 
 Spring Boot 2.6.3 application with known vulnerable dependencies and OWASP Dependency-Check pre-configured.
 

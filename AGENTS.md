@@ -2,7 +2,7 @@
 
 ## Repository Purpose
 
-This repo is the central metadata hub for technical workshops in the Cognition-Partner-Workshops organization. It contains:
+This repo is the central metadata hub for technical workshops in the infosys-training organization. It contains:
 - `modules/` — Atomic challenge tasks organized by category (security, migration, data-engineering, etc.)
 - `workshops/` — Reusable lab sequences and workshop templates
 - `events/` — Point-in-time workshop instances (active and archived)

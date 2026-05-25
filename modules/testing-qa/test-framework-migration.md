@@ -76,7 +76,7 @@ Intermediate
 
 ## <a id="petclinic-angular"></a>petclinic-angular
 
-**Repository:** [petclinic-angular](https://github.com/Cognition-Partner-Workshops/petclinic-angular)
+**Repository:** [petclinic-angular](https://github.com/infosys-training/petclinic-angular)
 
 Angular application currently using Karma + Jasmine for unit tests and Protractor for E2E. Migrate to Vitest + Playwright.
 
@@ -116,7 +116,7 @@ Open the repo's DeepWiki page to understand the test architecture and identify w
 
 ## <a id="ts-angular-realworld"></a>ts-angular-realworld
 
-**Repository:** [ts-angular-realworld](https://github.com/Cognition-Partner-Workshops/ts-angular-realworld)
+**Repository:** [ts-angular-realworld](https://github.com/infosys-training/ts-angular-realworld)
 
 Angular app that already uses Vitest + Playwright — use as a **reference target** for the migration, or as a second repo for parallel comparison.
 

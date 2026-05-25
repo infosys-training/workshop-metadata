@@ -63,7 +63,7 @@ Intermediate to Advanced
 
 ### <a id="timesheet-app"></a>timesheet-app
 
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Node.js/Express application — add Winston structured logging, Prometheus metrics, and OpenTelemetry tracing.
 
@@ -91,7 +91,7 @@ Open the repo's DeepWiki page to understand the middleware chain and request lif
 
 ### <a id="uc-spring-boot-upgrade-microservice-extraction"></a>uc-spring-boot-upgrade-microservice-extraction
 
-**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction)
+**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction)
 
 Spring Boot application — add Spring Boot Actuator, Micrometer metrics, and structured logging with Logback.
 

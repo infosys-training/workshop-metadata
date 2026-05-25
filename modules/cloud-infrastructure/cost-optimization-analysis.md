@@ -62,7 +62,7 @@ Intermediate
 
 ### <a id="timesheet-infra"></a>timesheet-infra
 
-**Repository:** [timesheet-infra](https://github.com/Cognition-Partner-Workshops/timesheet-infra)
+**Repository:** [timesheet-infra](https://github.com/infosys-training/timesheet-infra)
 
 AWS infrastructure (EC2, ECR, VPC) for a Node.js application — review resource sizing and identify optimization opportunities.
 
@@ -91,7 +91,7 @@ Open the repo's DeepWiki page to understand the infrastructure architecture. Pay
 
 ### <a id="calcom-infra"></a>calcom-infra
 
-**Repository:** [calcom-infra](https://github.com/Cognition-Partner-Workshops/calcom-infra)
+**Repository:** [calcom-infra](https://github.com/infosys-training/calcom-infra)
 
 Infrastructure configuration for deploying calcom — a more complex cloud setup with database, caching, and application tiers to analyze for cost efficiency.
 
