@@ -50,7 +50,7 @@
 
 ### Participant Requirements
 - [ ] Devin account access
-- [ ] GitHub access to `Cognition-Partner-Workshops` org (if needed)
+- [ ] GitHub access to `infosys-training` org (if needed)
 - [ ] Browser (Chrome recommended)
 
 ## Notes

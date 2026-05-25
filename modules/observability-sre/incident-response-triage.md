@@ -64,7 +64,7 @@ Intermediate
 
 ### <a id="timesheet-app"></a>timesheet-app
 
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Node.js/Express application — create incident response materials for a web application.
 
@@ -92,7 +92,7 @@ Open the repo's DeepWiki page to understand the application's dependencies and p
 
 ### <a id="uc-spring-boot-upgrade-microservice-extraction"></a>uc-spring-boot-upgrade-microservice-extraction
 
-**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction)
+**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction)
 
 Spring Boot monolith — create incident response materials for a Java application with database and API layers.
 

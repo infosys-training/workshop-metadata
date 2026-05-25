@@ -159,7 +159,7 @@ Participants choose one of the 7 tracks below and paste the prompt into a new De
 ### Track 1: Microservices
 
 **Module:** [Containerization & Microservice Extraction](../../../modules/migration-modernization/containerization-microservice-extraction.md)
-**Repository:** [petclinic-microservices](https://github.com/Cognition-Partner-Workshops/petclinic-microservices)
+**Repository:** [petclinic-microservices](https://github.com/infosys-training/petclinic-microservices)
 
 Spring Cloud microservices version of PetClinic — multiple services (customers, visits, vets) with service discovery and API gateway.
 
@@ -192,7 +192,7 @@ communicate correctly.
 ### Track 2: SRE
 
 **Module:** [Incident Response & Triage](../../../modules/observability-sre/incident-response-triage.md)
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Node.js/Express application — create incident response materials by analyzing the application's architecture and failure modes.
 
@@ -228,7 +228,7 @@ endpoints.
 ### Track 3: Test & QA
 
 **Module:** [BDD Test Generation](../../../modules/testing-qa/bdd-test-generation.md)
-**Repository:** [uc-bdd-test-generation-cucumber](https://github.com/Cognition-Partner-Workshops/uc-bdd-test-generation-cucumber)
+**Repository:** [uc-bdd-test-generation-cucumber](https://github.com/infosys-training/uc-bdd-test-generation-cucumber)
 
 Cucumber BDD framework for testing REST APIs — Devin generates Gherkin feature files and executable step definitions.
 
@@ -263,7 +263,7 @@ definitions.
 ### Track 4: Version Upgrades
 
 **Module:** [Framework Upgrade](../../../modules/migration-modernization/framework-upgrade.md)
-**Repository:** [petclinic-angular](https://github.com/Cognition-Partner-Workshops/petclinic-angular)
+**Repository:** [petclinic-angular](https://github.com/infosys-training/petclinic-angular)
 
 Angular front-end for PetClinic — uses an older Angular version with outdated dependencies and deprecated APIs.
 
@@ -294,7 +294,7 @@ the app builds successfully.
 ### Track 5: Mainframe Modernization
 
 **Module:** [COBOL System Understanding](../../../modules/migration-modernization/cobol-system-understanding.md)
-**Repository:** [uc-legacy-modernization-cobol-to-java](https://github.com/Cognition-Partner-Workshops/uc-legacy-modernization-cobol-to-java)
+**Repository:** [uc-legacy-modernization-cobol-to-java](https://github.com/infosys-training/uc-legacy-modernization-cobol-to-java)
 
 COBOL mainframe credit card management application (CardDemo) — real COBOL batch programs, JCL, DB2 integration, copybooks.
 
@@ -347,7 +347,7 @@ following artifacts:
 ### Track 6: IaC
 
 **Module:** [Terraform Module Extraction](../../../modules/cloud-infrastructure/terraform-module-extraction.md)
-**Repository:** [timesheet-infra](https://github.com/Cognition-Partner-Workshops/timesheet-infra)
+**Repository:** [timesheet-infra](https://github.com/infosys-training/timesheet-infra)
 
 AWS infrastructure for hosting a Node.js application — Terraform configurations covering EC2, ECR, networking, and IAM.
 
@@ -383,7 +383,7 @@ changes after refactoring.
 ### Track 7: Sec Vulns & CVEs
 
 **Modules:** [Upgrade Dependencies](../../../modules/security/upgrade-dependencies.md), [Remediate Vulnerabilities](../../../modules/security/remediate-vulnerabilities.md)
-**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/Cognition-Partner-Workshops/uc-cve-remediation-regulatory-compliance)
+**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/infosys-training/uc-cve-remediation-regulatory-compliance)
 
 Spring Boot 2.6.3 application with 18+ known CVEs — pre-configured with OWASP Dependency-Check and SonarQube Gradle plugins.
 
@@ -498,19 +498,19 @@ After the session, complete **2–3 additional modules** from tracks other than 
 
 ### Repos Required on Devin's Machine
 
-- [ ] [petclinic-microservices](https://github.com/Cognition-Partner-Workshops/petclinic-microservices)
-- [ ] [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
-- [ ] [uc-bdd-test-generation-cucumber](https://github.com/Cognition-Partner-Workshops/uc-bdd-test-generation-cucumber)
-- [ ] [petclinic-angular](https://github.com/Cognition-Partner-Workshops/petclinic-angular)
-- [ ] [uc-legacy-modernization-cobol-to-java](https://github.com/Cognition-Partner-Workshops/uc-legacy-modernization-cobol-to-java)
-- [ ] [timesheet-infra](https://github.com/Cognition-Partner-Workshops/timesheet-infra)
-- [ ] [uc-cve-remediation-regulatory-compliance](https://github.com/Cognition-Partner-Workshops/uc-cve-remediation-regulatory-compliance)
-- [ ] [quickapp-monolith](https://github.com/Cognition-Partner-Workshops/quickapp-monolith) *(take-home)*
-- [ ] [quickapp-microservices](https://github.com/Cognition-Partner-Workshops/quickapp-microservices) *(take-home)*
-- [ ] [uc-pod-remediation-credential-rotation](https://github.com/Cognition-Partner-Workshops/uc-pod-remediation-credential-rotation) *(take-home)*
-- [ ] [uc-volume-anomaly-detection](https://github.com/Cognition-Partner-Workshops/uc-volume-anomaly-detection) *(take-home)*
-- [ ] [ts-angular-realworld](https://github.com/Cognition-Partner-Workshops/ts-angular-realworld) *(take-home)*
-- [ ] [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction) *(take-home)*
+- [ ] [petclinic-microservices](https://github.com/infosys-training/petclinic-microservices)
+- [ ] [timesheet-app](https://github.com/infosys-training/timesheet-app)
+- [ ] [uc-bdd-test-generation-cucumber](https://github.com/infosys-training/uc-bdd-test-generation-cucumber)
+- [ ] [petclinic-angular](https://github.com/infosys-training/petclinic-angular)
+- [ ] [uc-legacy-modernization-cobol-to-java](https://github.com/infosys-training/uc-legacy-modernization-cobol-to-java)
+- [ ] [timesheet-infra](https://github.com/infosys-training/timesheet-infra)
+- [ ] [uc-cve-remediation-regulatory-compliance](https://github.com/infosys-training/uc-cve-remediation-regulatory-compliance)
+- [ ] [quickapp-monolith](https://github.com/infosys-training/quickapp-monolith) *(take-home)*
+- [ ] [quickapp-microservices](https://github.com/infosys-training/quickapp-microservices) *(take-home)*
+- [ ] [uc-pod-remediation-credential-rotation](https://github.com/infosys-training/uc-pod-remediation-credential-rotation) *(take-home)*
+- [ ] [uc-volume-anomaly-detection](https://github.com/infosys-training/uc-volume-anomaly-detection) *(take-home)*
+- [ ] [ts-angular-realworld](https://github.com/infosys-training/ts-angular-realworld) *(take-home)*
+- [ ] [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction) *(take-home)*
 
 ### Participant Requirements
 

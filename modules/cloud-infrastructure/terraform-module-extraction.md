@@ -62,7 +62,7 @@ Intermediate to Advanced
 
 ### <a id="timesheet-infra"></a>timesheet-infra
 
-**Repository:** [timesheet-infra](https://github.com/Cognition-Partner-Workshops/timesheet-infra)
+**Repository:** [timesheet-infra](https://github.com/infosys-training/timesheet-infra)
 
 AWS infrastructure for hosting a Node.js application — Terraform configurations covering EC2, ECR, networking, and IAM.
 
@@ -91,7 +91,7 @@ Open the repo's DeepWiki page to understand the infrastructure architecture and 
 
 ### <a id="ordermanager-iac"></a>ordermanager-iac
 
-**Repository:** [ordermanager-iac](https://github.com/Cognition-Partner-Workshops/ordermanager-iac)
+**Repository:** [ordermanager-iac](https://github.com/infosys-training/ordermanager-iac)
 
 Infrastructure-as-Code for a .NET/Angular monolith deployment — Terraform configurations for cloud infrastructure provisioning.
 

@@ -66,7 +66,7 @@ Intermediate to Advanced
 
 ## <a id="timesheet-app"></a>timesheet-app
 
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Has existing `sast-scan.yml` and `pr-checks.yml` workflows — good for studying and enhancing existing security CI.
 
@@ -108,7 +108,7 @@ Open the repo's DeepWiki page to understand the existing CI/CD setup and identif
 
 ## <a id="uc-cve-remediation-regulatory-compliance"></a>uc-cve-remediation-regulatory-compliance
 
-**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/Cognition-Partner-Workshops/uc-cve-remediation-regulatory-compliance)
+**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/infosys-training/uc-cve-remediation-regulatory-compliance)
 
 No CI currently (workflows were removed) — but has OWASP Dependency-Check and SonarQube Gradle plugins pre-configured for local scanning. Ideal for building security CI from scratch.
 

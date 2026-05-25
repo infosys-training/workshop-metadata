@@ -1,6 +1,6 @@
 # Workshop Metadata
 
-Central index for the **Cognition-Partner-Workshops** GitHub org. This repo contains:
+Central index for the **infosys-training** GitHub org. This repo contains:
 
 - **Repo Catalog** — inventory of all repositories with cross-references to challenges they support
 - **Modular Challenges** — self-contained workshop tasks organized by SDLC domain

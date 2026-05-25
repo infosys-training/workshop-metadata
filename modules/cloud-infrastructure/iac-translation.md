@@ -60,7 +60,7 @@ Intermediate
 
 ### <a id="timesheet-infra"></a>timesheet-infra
 
-**Repository:** [timesheet-infra](https://github.com/Cognition-Partner-Workshops/timesheet-infra)
+**Repository:** [timesheet-infra](https://github.com/infosys-training/timesheet-infra)
 
 Terraform infrastructure code for hosting the timesheet application. Translate to AWS CDK, CloudFormation, or Pulumi.
 

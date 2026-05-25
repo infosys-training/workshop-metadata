@@ -72,7 +72,7 @@ Intermediate
 
 ## <a id="timesheet-app"></a>timesheet-app
 
-**Repository:** [timesheet-app](https://github.com/Cognition-Partner-Workshops/timesheet-app)
+**Repository:** [timesheet-app](https://github.com/infosys-training/timesheet-app)
 
 Node.js application with Trivy scanning already configured.
 
@@ -113,7 +113,7 @@ Open the repo's DeepWiki page to understand the authentication flow and data han
 
 ## <a id="uc-cve-remediation-regulatory-compliance"></a>uc-cve-remediation-regulatory-compliance
 
-**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/Cognition-Partner-Workshops/uc-cve-remediation-regulatory-compliance)
+**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/infosys-training/uc-cve-remediation-regulatory-compliance)
 
 Spring Boot 2.6.3 with known CVEs, pre-configured with OWASP Dependency-Check and SonarQube Gradle plugins for local SAST scanning.
 

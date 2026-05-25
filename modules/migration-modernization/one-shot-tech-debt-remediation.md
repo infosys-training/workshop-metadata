@@ -117,7 +117,7 @@ Advanced
 
 ## <a id="uc-spring-boot-upgrade-microservice-extraction"></a>uc-spring-boot-upgrade-microservice-extraction
 
-**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction)
+**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction)
 
 Spring Boot 2.6.3 + Java 11 application. Target: Java 17 + Spring Boot 3.2 with full namespace migration and proof documents.
 
@@ -198,7 +198,7 @@ Open the repo's DeepWiki page to understand the full architecture. Identify:
 
 ## <a id="uc-cve-remediation-regulatory-compliance"></a>uc-cve-remediation-regulatory-compliance
 
-**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/Cognition-Partner-Workshops/uc-cve-remediation-regulatory-compliance)
+**Repository:** [uc-cve-remediation-regulatory-compliance](https://github.com/infosys-training/uc-cve-remediation-regulatory-compliance)
 
 Same Spring Boot 2.6.3 codebase but with an emphasis on remediating the 18+ known CVEs as tech debt. The one-shot prompt here focuses on security tech debt specifically.
 

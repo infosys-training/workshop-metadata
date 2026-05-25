@@ -87,7 +87,7 @@ Intermediate
 
 ## <a id="petclinic-angular"></a>petclinic-angular
 
-**Repository:** [petclinic-angular](https://github.com/Cognition-Partner-Workshops/petclinic-angular)
+**Repository:** [petclinic-angular](https://github.com/infosys-training/petclinic-angular)
 
 Angular front-end for the PetClinic application. Uses an older Angular version with outdated dependencies and deprecated APIs.
 
@@ -127,7 +127,7 @@ Open the repo's DeepWiki page to understand the module structure, component tree
 
 ## <a id="ts-angular-realworld"></a>ts-angular-realworld
 
-**Repository:** [ts-angular-realworld](https://github.com/Cognition-Partner-Workshops/ts-angular-realworld)
+**Repository:** [ts-angular-realworld](https://github.com/infosys-training/ts-angular-realworld)
 
 Angular RealWorld example app with a different module structure. Provides a second Angular upgrade target to compare approaches.
 
@@ -157,7 +157,7 @@ Open the repo's DeepWiki page to understand the architecture and dependency grap
 
 ## <a id="uc-spring-boot-upgrade-microservice-extraction"></a>uc-spring-boot-upgrade-microservice-extraction
 
-**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/Cognition-Partner-Workshops/uc-spring-boot-upgrade-microservice-extraction)
+**Repository:** [uc-spring-boot-upgrade-microservice-extraction](https://github.com/infosys-training/uc-spring-boot-upgrade-microservice-extraction)
 
 Spring Boot 2.6.3 backend with Java 11. Requires upgrading to Java 17 + Spring Boot 3.2 including the javax → jakarta namespace migration.
 

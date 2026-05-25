@@ -104,7 +104,7 @@ Intermediate
 
 ## <a id="quickapp-microservices"></a>quickapp-microservices
 
-**Repository:** [quickapp-microservices](https://github.com/Cognition-Partner-Workshops/quickapp-microservices)
+**Repository:** [quickapp-microservices](https://github.com/infosys-training/quickapp-microservices)
 
 .NET microservices with 5 services (Identity, Customer, Order, Product, Notification) + YARP API Gateway + shared contracts. The Notification service has a unit mismatch bug in its currency formatting logic.
 
